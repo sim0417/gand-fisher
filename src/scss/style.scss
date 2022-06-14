@@ -1,0 +1,17 @@
+@import '_reset';
+@import '_variables';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  background: #000000;
+  overflow: hidden;
+}

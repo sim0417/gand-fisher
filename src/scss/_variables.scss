@@ -1,0 +1,12 @@
+
+@mixin mediaSizeForMobile() {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin mediaSizeForCustom($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
