@@ -64,14 +64,41 @@
             </ul>
           </div>
         </div>
+
+        <div class="header-drawer-menu" uk-toggle="target: #offcanvas">
+          <img src="img/header_menu.png" />
+        </div>
+        <div id="offcanvas" uk-offcanvas="overlay: true; flip: true">
+          <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="offcanvas-body">
+              <nav>
+                <a href="#story">Story</a>
+                <a href="#token">Token</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#team">Team</a>
+                <a href="#partners">Partners</a>
+              </nav>
+              <div>
+                <div class="link-list">
+                  <div>Documents</div>
+                  <nav>
+                    <a href="#" target="_blank">English</a>
+                  </nav>
+                </div>
+                <div class="link-list">
+                  <div>LANGUAGE</div>
+                  <ul class="language-change">
+                    <li id="lan-en">English</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <section id="main">
         <img class="logo" src="img/logo.png" alt="main logo" />
-        <div class="button-wrapper">
-          <div class="border"></div>
-          <button>Play Now !</button>
-          <div class="border"></div>
-        </div>
         <nav>
           <a href="https://discord.com/invite/grandfisher" target="_blank">
             <img src="img/discord.png" alt="discord" />
@@ -83,6 +110,11 @@
             <img src="img/facebook.png" alt="facebook" />
           </a>
         </nav>
+        <div class="button-wrapper">
+          <div class="border"></div>
+          <button>Play Now !</button>
+          <div class="border"></div>
+        </div>
       </section>
       <section id="story">
         <article
@@ -118,13 +150,45 @@
             <img src="img/next.png" />
           </a>
         </article>
+        <article
+          class="slide-wrapper-mobile"
+          uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: fade"
+        >
+          <img class="top-bg" src="img/story_top_bg.png" alt="story top background" />
+          <img class="top" src="img/story_top.png" alt="story top" />
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="img/en/story_mobile_01.png" alt="story 1" data-img="story_1" />
+            </li>
+            <li>
+              <img src="img/en/story_mobile_02.png" alt="story 2" data-img="story_2" />
+            </li>
+            <li>
+              <img src="img/en/story_mobile_03.png" alt="story 3" data-img="story_3" />
+            </li>
+          </ul>
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slideshow-item="previous"
+          >
+            <img src="img/prev.png" />
+          </a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slideshow-item="next"
+          >
+            <img src="img/next.png" />
+          </a>
+        </article>
       </section>
       <section id="project">
         <article class="characters">
           <img class="pro-1" src="img/project_001.png" alt="project_001" />
           <img class="pro-1-bg" src="img/project_002.png" alt="project_002" />
           <img class="pro-2" src="img/project_003.png" alt="project_003" />
-          <img class="pro-1-bg" src="img/project_004.png" alt="project_004" />
+          <img class="pro-2-bg" src="img/project_004.png" alt="project_004" />
         </article>
         <article class="text">
           <img src="img/project_text.png" alt="project_text" />
@@ -319,6 +383,20 @@
               </div>
             </li>
           </ul>
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slideshow-item="previous"
+          >
+          </a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slideshow-item="next"
+          >
+          </a>
         </article>
       </section>
       <section id="partners">
