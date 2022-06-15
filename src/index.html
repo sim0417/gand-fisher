@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Project Title</title>
-    <link rel="icon" href="" />
+    <title>Grandfisher</title>
+    <link rel="icon" href="img/favicon.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta name="Title" content="Title" />
-    <meta name="Subject" content="Subject" />
-    <meta name="Description" content="Description" />
-    <meta name="Keywords" content="Keywords" />
-    <meta http-equiv="Reply-To" content="" />
-    <meta http-equiv="Email" content="" />
-    <meta http-equiv="Copyright" content="" />
+    <meta name="Title" content="Grandfisher" />
+    <meta name="Subject" content="P2E FISHING GAME" />
+    <meta name="Description" content="블록체인기반 P2E 낚시 게임입니다! 낚시왕이 되어보세요!" />
+    <meta name="Keywords" content="블록체인, P2E게임, 그랜드피셔, 낚시게임, FISHER, grandfisher" />
+    <meta http-equiv="Reply-To" content="contact@grandfisher.io" />
+    <meta http-equiv="Email" content="contact@grandfisher.io" />
+    <meta http-equiv="Copyright" content="©2022 grandfisher, Inc. All rights reserved" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Grandfisher" />
+    <meta property="og:image" content="img/og_image.png" />
+    <meta
+      property="og:description"
+      content="블록체인기반 P2E 낚시 게임입니다! 낚시왕이 되어보세요!"
+    />
+    <meta property="og:site_name" content="P2E FISHING GAME" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="400" />
     <!-- UIkit -->
@@ -36,9 +39,327 @@
   </head>
   <body>
     <main>
-      <header></header>
-      <section></section>
-      <footer></footer>
+      <header class="boundary">
+        <nav>
+          <a href="#main">
+            <img class="logo" src="img/logo.png" alt="logo" />
+          </a>
+          <a href="#story">Story</a>
+          <a href="#token">Token</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#team">Team</a>
+          <a href="#partners">Partners</a>
+        </nav>
+        <div class="header-drop-down">
+          <p>Documents</p>
+          <div uk-dropdown="boundary: .boundary; offset: 29">
+            <nav class="dropdown-list">
+              <a href="#" target="_blank">English</a>
+            </nav>
+          </div>
+          <p>Language</p>
+          <div uk-dropdown="boundary: .boundary; offset: 29">
+            <ul class="dropdown-list language-change">
+              <li id="lan-en" class="active">English</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section id="main">
+        <img class="logo" src="img/logo.png" alt="main logo" />
+        <div class="button-wrapper">
+          <div class="border"></div>
+          <button>Play Now !</button>
+          <div class="border"></div>
+        </div>
+        <nav>
+          <a href="https://discord.com/invite/grandfisher" target="_blank">
+            <img src="img/discord.png" alt="discord" />
+          </a>
+          <a href="https://twitter.com/contact_Gfisher" target="_blank">
+            <img src="img/twitter.png" alt="twitter" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/facebook.png" alt="facebook" />
+          </a>
+        </nav>
+      </section>
+      <section id="story">
+        <article
+          class="slide-wrapper"
+          uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: fade"
+        >
+          <img class="top-bg" src="img/story_top_bg.png" alt="story top background" />
+          <img class="top" src="img/story_top.png" alt="story top" />
+
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="img/en/story_01.png" alt="story 1" data-img="story_1" />
+            </li>
+            <li>
+              <img src="img/en/story_02.png" alt="story 2" data-img="story_2" />
+            </li>
+            <li>
+              <img src="img/en/story_03.png" alt="story 3" data-img="story_3" />
+            </li>
+          </ul>
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slideshow-item="previous"
+          >
+            <img src="img/prev.png" />
+          </a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slideshow-item="next"
+          >
+            <img src="img/next.png" />
+          </a>
+        </article>
+      </section>
+      <section id="project">
+        <article class="characters">
+          <img class="pro-1" src="img/project_001.png" alt="project_001" />
+          <img class="pro-1-bg" src="img/project_002.png" alt="project_002" />
+          <img class="pro-2" src="img/project_003.png" alt="project_003" />
+          <img class="pro-1-bg" src="img/project_004.png" alt="project_004" />
+        </article>
+        <article class="text">
+          <img src="img/project_text.png" alt="project_text" />
+        </article>
+      </section>
+      <section id="token">
+        <h2>TOKEN ECONOMY</h2>
+        <article>
+          <img src="img/token_graph.png" alt="token graph" />
+        </article>
+      </section>
+      <section id="roadmap">
+        <article>
+          <img class="roadmap-title" src="img/roadmap_title.png" alt="roadmap title" />
+          <img src="img/roadmap_001.png" alt="roadmap 1" />
+          <img src="img/roadmap_002.png" alt="roadmap 2" />
+          <img src="img/roadmap_003.png" alt="roadmap 3" />
+          <img src="img/roadmap_004.png" alt="roadmap 4" />
+        </article>
+      </section>
+      <section id="team">
+        <article class="slider-wrapper" uk-slideshow="autoplay: true; autoplay-interval: 4000">
+          <img class="team-title" src="img/team_title.png" alt="team title" />
+          <ul class="uk-slideshow-items">
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_001.png" />
+                    </div>
+                    <div class="profile-name">Aiden</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> GDR Singapore CEO</li>
+                        <li>> Bitget contract trading competition</li>
+                        <li>concluded 1st place(2021-06)</li>
+                        <li>> Cryptocurrency Consulting 2017-2022</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_002.png" />
+                    </div>
+                    <div class="profile-name">David</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Executive Director of the UPbit</li>
+                        <li>Operations Team</li>
+                        <li>> Represented Coinbit Business Unit</li>
+                        <li>> BiKi Director</li>
+                        <li>> SB Executive Director</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_003.png" />
+                    </div>
+                    <div class="profile-name">Jacop</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Bithumb Korea Manager</li>
+                        <li>> EBINC Tester</li>
+                        <li>> Flunisoft CMO</li>
+                        <li>> SB Executive Director</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_004.png" />
+                    </div>
+                    <div class="profile-name">James</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Blockchain Marketing 100+ Project</li>
+                        <li>> Blockchain Consulting 2019-2022</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slideshow-item="previous"
+          >
+          </a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slideshow-item="next"
+          >
+          </a>
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </article>
+        <article
+          class="slider-wrapper-mobile"
+          uk-slideshow="autoplay: true; autoplay-interval: 4000"
+        >
+          <img class="team-title" src="img/team_title.png" alt="team title" />
+          <ul class="uk-slideshow-items">
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_001.png" />
+                    </div>
+                    <div class="profile-name">Aiden</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> GDR Singapore CEO</li>
+                        <li>> Bitget contract trading competition</li>
+                        <li>concluded 1st place(2021-06)</li>
+                        <li>> Cryptocurrency Consulting 2017-2022</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_002.png" />
+                    </div>
+                    <div class="profile-name">David</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Executive Director of the UPbit</li>
+                        <li>Operations Team</li>
+                        <li>> Represented Coinbit Business Unit</li>
+                        <li>> BiKi Director</li>
+                        <li>> SB Executive Director</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_003.png" />
+                    </div>
+                    <div class="profile-name">Jacop</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Bithumb Korea Manager</li>
+                        <li>> EBINC Tester</li>
+                        <li>> Flunisoft CMO</li>
+                        <li>> SB Executive Director</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-item">
+                <div class="list">
+                  <div class="profile-item">
+                    <div class="profile-avator">
+                      <img src="img/team_004.png" />
+                    </div>
+                    <div class="profile-name">James</div>
+                    <div class="profile-desc">
+                      <ul>
+                        <li>> Blockchain Marketing 100+ Project</li>
+                        <li>> Blockchain Consulting 2019-2022</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="partners">
+        <img class="partners-title" src="img/partners_title.png" alt="partners title" />
+        <article class="parters-list">
+          <div>
+            <img src="img/parter_coworkers.png" alt="parter coworkers" />
+          </div>
+        </article>
+      </section>
+      <footer>
+        <article class="footer-links">
+          <div class="footer-column">
+            <p>• Community •</p>
+            <nav>
+              <a href="https://discord.com/invite/grandfisher" target="_blank">
+                <img src="img/discord.png" alt="discord" />
+              </a>
+              <a href="https://twitter.com/contact_Gfisher" target="_blank">
+                <img src="img/twitter.png" alt="twitter" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" alt="facebook" />
+              </a>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <p>• Documents •</p>
+            <nav>
+              <a href="#">English</a>
+            </nav>
+          </div>
+        </article>
+        <article class="footer-info">
+          <img class="logo" src="img/logo.png" alt="logo" />
+          <div>
+            <p>Contact : contact@grandfisher.io</p>
+            <p>©2022 grandfisher, Inc. All rights reserved</p>
+          </div>
+        </article>
+      </footer>
     </main>
     <script type="module" src="./js/index.js"></script>
   </body>
