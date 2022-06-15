@@ -92,6 +92,10 @@ header {
     }
   }
 
+  & .header-drawer-menu {
+    display: none;
+  }
+
   @include mediaSizeForCustom(1440px) {
     padding: 0px 15px;
   }
@@ -114,6 +118,10 @@ header {
   }
 
   @include mediaSizeForMobile() {
+    & .header-drawer-menu {
+      display: block;
+    }
+
     height: 50px;
     padding: 0px 15px;
 
